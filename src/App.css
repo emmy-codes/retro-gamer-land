@@ -1,38 +1,373 @@
-.App {
+
+.background {
+  /* background-image: url(windows95.jpg);
+    background-position: center;
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    z-index: -1;
+    background-size: cover; totally ruins everything, big overhaul needed*/
+  background-color: #008080;
+  display: initial;
+  margin: 0;
+};
+
+.start-button {
+  display: block;
+  padding: 3px 5px 3px 33px;
+  border-color: #808080;
   text-align: center;
+  font-family: "Microsoft Sans", sans-serif;
+  font-weight: bold;
+  margin: 0 0 0 0.4vh;
+  box-shadow: 2px 2px 2px black, inset 2px 2px 3px white;
+  cursor: pointer;
+};
+
+.win-icon {
+  background: url("./Images/win95icon.png") no-repeat;
+  position: absolute;
+  background-size: 24px;
+  background-position: 5px center;
+};
+
+.taskbar {
+  background-color: #c0c0c0;
+  display: flex;
+  width: 100vw;
+  height: 1.7rem;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  padding: 3px 0px;
+  box-shadow: 0px -3px 2px white;
+};
+
+.bin-icon {
+  background: url("./Images/recycle-bin.png") no-repeat;
+  position: absolute;
+  display: block;
+  bottom: 5.5%;
+  right: 2%;
+  background-position: top center;
+  background-size: 25px;
+  padding-top: 30px;
+  cursor: pointer;
+};
+
+.icon-text {
+  font-family: "Microsoft Sans", sans-serif;
+  font-size: 1.5vh;
+  text-align: center;
+  color: white;
+};
+
+.all-icons {
+  padding: 10px;
+  padding-top: 30px;
+  position: absolute;
+  display: block;
+};
+
+.documents-icon {
+  background: url("./Images/folderIcon.png") no-repeat;
+  background-position: top center;
+  top: 5%;
+  left: 25%;
+  background-size: 30px;
+  cursor: pointer;
+};
+
+.the-internet-icon {
+  background: url("./Images/the-internet.png") no-repeat;
+  top: 4%;
+  left: 20%;
+  background-position: top center;
+  background-size: 30px;
+  padding-top: 26px;
+  cursor: pointer;
+};
+
+.my-computer-icon {
+  background: url("./Images/my-computer.png") no-repeat;
+  top: 14%;
+  left: 42%;
+  background-position: top center;
+  background-size: 30px;
+  padding-top: 33px;
+  cursor: pointer;
+};
+
+.cd-image {
+  background: url("./Images/cd-image.png") no-repeat;
+  top: 6%;
+  right: 15%;
+  background-position: top center;
+  background-size: 30px;
+  padding-top: 32px;
+  cursor: pointer;
+};
+
+.link-details {
+  text-decoration: none;
+};
+
+.start-menu {
+  background-color: #c0c0c0;
+  position: absolute;
+  text-align: center;
+  font-family: "Microsoft Sans", sans-serif;
+  font-weight: bold;
+  height: 35vh;
+  max-width: 35vw;
+  bottom: calc(1.7rem + 3px + 1px);
+  box-shadow: 2px 2px 4px 0px black;
+  padding: 5px 0px 0px 5px;
+  box-shadow: inset 3px 3px 2px white, 3px 3px 2px black;
+  margin-left: 0.6vh;
+  display: inline-flex;
+  /* bottom: calc (height of taskbar + padding + box shadow*/
+};
+
+.clicked-start-button {
+  display: block;
+  padding: 4px 8px 4px 33px;
+  border-color: #808080;
+  text-align: center;
+  font-family: "Microsoft Sans", sans-serif;
+  font-weight: bold;
+  margin: 0 0 0 0.4vh;
+  box-shadow: inset -2px -2px 2px white, inset 2px 2px 3px black;
+  outline: 1px dotted black;
+  outline-offset: -4px;
+};
+
+.time {
+  width: 3rem;
+  height: 1.2rem;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  display: block;
+  text-align: center;
+  box-shadow: 2px 2px 1px 0px white, inset 1px 1px 0px 1px #909090;
+  margin-bottom: 0.3rem;
+  margin-right: 0.3rem;
+  padding-top: 0.2rem;
+};
+
+body .hidden {
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.side-bar {
+  background-color: #909090;
+  height: 99%;
+  width: 2rem;
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+};
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.side-bar-text {
+  font-family: "Microsoft Sans", sans-serif;
+  font-weight: bold;
+  color: #d3d3d3;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: -5px;
+  width: inherit;
+  font-size: 1.5rem;
+  display: inline-flex;
+  right: 0.1rem;
+};
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nr95 {
+  font-family: "Microsoft Sans", sans-serif;
+  color: white;
+  font-weight: lighter;
+  margin-left: 0.5em;
+};
+
+.clippy {
+  background: url("./Images/clippy-headscratch.gif") no-repeat;
+  background-position: bottom center;
+  background-size: 90px;
+  width: 100%;
+  height: 90px;
+};
+
+.opened-folder {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  left: 10%;
+  top: 30%;
+  max-width: 15em;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid #393939;
+  border-bottom: 2px solid #393939;
+  background: #c0c0c0;
+  font-family: "Microsoft Sans", sans-serif;
+};
+
+.folder-header {
+  background: #000181;
   color: white;
+  position: relative;
+  font-size: 0.65rem;
+  padding: 4px;
+  border: 2px solid #bdbdbd;
+  text-align: center;
+};
+
+.folder-body {
+  position: relative;
+  padding: 10px 7px;
+  border: 2px solid #bdbdbd;
+  flex: 1 1 auto;
+  background: white;
+  min-height: 7em;
+};
+
+.project-icons {
+  background: url("./Images/folderIcon.png") no-repeat;
+  background-position: top center;
+  top: 3%;
+  left: 1%;
+  background-size: 30px;
+  color: #393939;
+  text-decoration: none;
+  position: inherit;
+  display: -webkit-inline-box;
+};
+
+.folder-img {
+  display: inline-flex;
+  position: relative;
+  object-fit: none;
+};
+
+.projects-imgs {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  max-width: 50vw;
+  max-height: 50vh;
 }
 
-.App-link {
-  color: #61dafb;
+.close-button {
+  color: white;
+  display: block;
+  font-family: Verdana;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+};
+
+.menu-item {
+  display: flex;
+  width: calc(98% - 0.3em);
+  align-items: center;
+  padding: 0.3em;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-items {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-size: 1.1vw;
+};
+
+.menu-item span {
+  margin-left: 0.4em;
+  line-height: 1;
+  margin-top: 0.4em;
 }
+
+.menu-item:hover {
+  background: #1718ba;
+  color: white;
+};
+
+.menu-item::after {
+  display: block;
+  content: "\203A";
+  font-weight: 800;
+  position: absolute;
+  right: 0.4em;
+  font-size: 1.4em;
+};
+
+@media only screen and (max-width: 650px) {
+  .menu-item {
+    font-size: 12px;
+  };
+
+  .clippy {
+    padding-top: 95px;
+  };
+
+  .folder-img {
+    object-fit: fill;
+    max-width: 15%;
+  };
+};
+
+@media only screen and (min-width: 800px) {
+  .start-menu {
+    width: 18vw;
+  };
+
+  .opened-folder {
+    max-width: 20em;
+    height: 15em;
+  };
+
+  .all-icons {
+    padding-top: 50px;
+    background-size: 45px;
+    font-size: 0.75rem;
+  };
+
+  .clippy {
+    background-size: 90px;
+  };
+};
+
+@media only screen and (min-width: 1024px) {
+  .menu-item {
+    font-size: 18px;
+  };
+};
+
+
+.clippy-balloon {
+    background: #FFC;
+    color: black;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+};
+
+.clippycontent {
+  display: block;
+  max-width: 200px;
+  min-width: 120px;
+  font-family: "Microsoft Sans", sans-serif;
+  font-size: 10pt;
+  height: auto;
+  cursor: pointer;
+  top: 40%;
+  left: 60%;
+  position: absolute;
+  height: 3.2rem;
+  width: 6.8rem;
+  font-family: sans-serif;
+  font-size: small;
+};
