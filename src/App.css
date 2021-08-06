@@ -1,16 +1,8 @@
-
 .background {
-  /* background-image: url(windows95.jpg);
-    background-position: center;
-    position: relative;
-    margin: 0;
-    height: 100vh;
-    z-index: -1;
-    background-size: cover; totally ruins everything, big overhaul needed*/
   background-color: #008080;
   display: initial;
   margin: 0;
-};
+}
 
 .start-button {
   display: block;
@@ -22,14 +14,16 @@
   margin: 0 0 0 0.4vh;
   box-shadow: 2px 2px 2px black, inset 2px 2px 3px white;
   cursor: pointer;
-};
+  bottom: 0.3rem;
+  left: 0.1rem;
+}
 
 .win-icon {
   background: url("./Images/win95icon.png") no-repeat;
   position: absolute;
   background-size: 24px;
   background-position: 5px center;
-};
+}
 
 .taskbar {
   background-color: #c0c0c0;
@@ -41,7 +35,7 @@
   z-index: -1;
   padding: 3px 0px;
   box-shadow: 0px -3px 2px white;
-};
+}
 
 .bin-icon {
   background: url("./Images/recycle-bin.png") no-repeat;
@@ -53,21 +47,21 @@
   background-size: 25px;
   padding-top: 30px;
   cursor: pointer;
-};
+}
 
 .icon-text {
   font-family: "Microsoft Sans", sans-serif;
   font-size: 1.5vh;
   text-align: center;
   color: white;
-};
+}
 
 .all-icons {
   padding: 10px;
   padding-top: 30px;
   position: absolute;
   display: block;
-};
+}
 
 .documents-icon {
   background: url("./Images/folderIcon.png") no-repeat;
@@ -76,7 +70,7 @@
   left: 25%;
   background-size: 30px;
   cursor: pointer;
-};
+}
 
 .the-internet-icon {
   background: url("./Images/the-internet.png") no-repeat;
@@ -86,7 +80,7 @@
   background-size: 30px;
   padding-top: 26px;
   cursor: pointer;
-};
+}
 
 .my-computer-icon {
   background: url("./Images/my-computer.png") no-repeat;
@@ -96,7 +90,7 @@
   background-size: 30px;
   padding-top: 33px;
   cursor: pointer;
-};
+}
 
 .cd-image {
   background: url("./Images/cd-image.png") no-repeat;
@@ -106,11 +100,11 @@
   background-size: 30px;
   padding-top: 32px;
   cursor: pointer;
-};
+}
 
 .link-details {
   text-decoration: none;
-};
+}
 
 .start-menu {
   background-color: #c0c0c0;
@@ -126,8 +120,7 @@
   box-shadow: inset 3px 3px 2px white, 3px 3px 2px black;
   margin-left: 0.6vh;
   display: inline-flex;
-  /* bottom: calc (height of taskbar + padding + box shadow*/
-};
+}
 
 .clicked-start-button {
   display: block;
@@ -140,7 +133,7 @@
   box-shadow: inset -2px -2px 2px white, inset 2px 2px 3px black;
   outline: 1px dotted black;
   outline-offset: -4px;
-};
+}
 
 .time {
   width: 3rem;
@@ -154,7 +147,7 @@
   margin-bottom: 0.3rem;
   margin-right: 0.3rem;
   padding-top: 0.2rem;
-};
+}
 
 body .hidden {
   display: none;
@@ -167,7 +160,7 @@ body .hidden {
   display: flex;
   position: relative;
   flex-shrink: 0;
-};
+}
 
 .side-bar-text {
   font-family: "Microsoft Sans", sans-serif;
@@ -180,14 +173,14 @@ body .hidden {
   font-size: 1.5rem;
   display: inline-flex;
   right: 0.1rem;
-};
+}
 
 .nr95 {
   font-family: "Microsoft Sans", sans-serif;
   color: white;
   font-weight: lighter;
   margin-left: 0.5em;
-};
+}
 
 .clippy {
   background: url("./Images/clippy-headscratch.gif") no-repeat;
@@ -195,7 +188,7 @@ body .hidden {
   background-size: 90px;
   width: 100%;
   height: 90px;
-};
+}
 
 .opened-folder {
   position: absolute;
@@ -211,7 +204,7 @@ body .hidden {
   border-bottom: 2px solid #393939;
   background: #c0c0c0;
   font-family: "Microsoft Sans", sans-serif;
-};
+}
 
 .folder-header {
   background: #000181;
@@ -221,7 +214,7 @@ body .hidden {
   padding: 4px;
   border: 2px solid #bdbdbd;
   text-align: center;
-};
+}
 
 .folder-body {
   position: relative;
@@ -230,7 +223,7 @@ body .hidden {
   flex: 1 1 auto;
   background: white;
   min-height: 7em;
-};
+}
 
 .project-icons {
   background: url("./Images/folderIcon.png") no-repeat;
@@ -242,13 +235,13 @@ body .hidden {
   text-decoration: none;
   position: inherit;
   display: -webkit-inline-box;
-};
+}
 
 .folder-img {
   display: inline-flex;
   position: relative;
   object-fit: none;
-};
+}
 
 .projects-imgs {
   position: absolute;
@@ -267,7 +260,7 @@ body .hidden {
   right: 0;
   top: 0;
   z-index: 1;
-};
+}
 
 .menu-item {
   display: flex;
@@ -282,7 +275,7 @@ body .hidden {
   width: 100%;
   flex-direction: column;
   font-size: 1.1vw;
-};
+}
 
 .menu-item span {
   margin-left: 0.4em;
@@ -293,7 +286,7 @@ body .hidden {
 .menu-item:hover {
   background: #1718ba;
   color: white;
-};
+}
 
 .menu-item::after {
   display: block;
@@ -302,58 +295,57 @@ body .hidden {
   position: absolute;
   right: 0.4em;
   font-size: 1.4em;
-};
+}
 
 @media only screen and (max-width: 650px) {
   .menu-item {
     font-size: 12px;
-  };
+  }
 
   .clippy {
     padding-top: 95px;
-  };
+  }
 
   .folder-img {
     object-fit: fill;
     max-width: 15%;
-  };
-};
+  }
+}
 
 @media only screen and (min-width: 800px) {
   .start-menu {
     width: 18vw;
-  };
+  }
 
   .opened-folder {
     max-width: 20em;
     height: 15em;
-  };
+  }
 
   .all-icons {
     padding-top: 50px;
     background-size: 45px;
     font-size: 0.75rem;
-  };
+  }
 
   .clippy {
     background-size: 90px;
-  };
-};
+  }
+}
 
 @media only screen and (min-width: 1024px) {
   .menu-item {
     font-size: 18px;
-  };
-};
-
+  }
+}
 
 .clippy-balloon {
-    background: #FFC;
-    color: black;
-    padding: 8px;
-    border: 1px solid black;
-    border-radius: 5px;
-};
+  background: #ffc;
+  color: black;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
 
 .clippycontent {
   display: block;
@@ -370,4 +362,4 @@ body .hidden {
   width: 6.8rem;
   font-family: sans-serif;
   font-size: small;
-};
+}
