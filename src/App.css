@@ -238,6 +238,7 @@ body .hidden {
 }
 
 .folder-img {
+  background: url("./Images/folderIcon.png") no-repeat;
   display: inline-flex;
   position: relative;
   object-fit: none;
@@ -264,10 +265,10 @@ body .hidden {
 
 .menu-item {
   display: flex;
-  width: calc(98% - 0.3em);
   align-items: center;
-  padding: 0.3em;
+  padding: 0.7em 0 0.3em 2.4em;
   cursor: pointer;
+  background-position: 0.3em;
 }
 
 .menu-items {
@@ -295,6 +296,8 @@ body .hidden {
   position: absolute;
   right: 0.4em;
   font-size: 1.4em;
+  line-height: 1.1em;
+  margin-top: -0.2em;
 }
 
 @media only screen and (max-width: 650px) {
