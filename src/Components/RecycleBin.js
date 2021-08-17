@@ -10,6 +10,6 @@ function RecycleBin() {
       </div>
     </>
   );
-}
+};
 
 export default RecycleBin;

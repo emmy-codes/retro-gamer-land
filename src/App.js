@@ -6,7 +6,9 @@ import RecycleBin from "./Components/RecycleBin";
 import StartMenu from "./Components/StartMenu";
 import TheInternet from "./Components/TheInternet";
 import Time from "./Components/Time";
-import "./app.css"
+import MyDocuments from "./Components/MyDocuments";
+import MiniGame from "./Components/MiniGame";
+import "./app.css";
 
 function App() {
   return (
@@ -17,9 +19,11 @@ function App() {
       <RecycleBin />
       <StartMenu />
       <TheInternet />
+      <MyDocuments />
       <Time />
+      <MiniGame />
     </>
   );
-}
+};
 
 export default App;

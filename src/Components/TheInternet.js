@@ -15,6 +15,6 @@ function TheInternet() {
       </a>
     </>
   );
-}
+};
 
 export default TheInternet;

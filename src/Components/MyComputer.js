@@ -10,6 +10,6 @@ function MyComputer() {
       </div>
     </>
   );
-}
+};
 
 export default MyComputer;

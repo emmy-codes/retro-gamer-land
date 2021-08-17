@@ -44,6 +44,6 @@ function StartMenu() {
         </div>
     </>
   );
-}
+};
 
 export default StartMenu;

@@ -18,6 +18,18 @@
   left: 0.1rem;
 }
 
+.mini-game {
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  height: 60%;
+  top: 20%;
+  margin: auto;
+  left: 25%;
+  background-color: pink;
+}
+
 .win-icon {
   background: url("./Images/win95icon.png") no-repeat;
   position: absolute;
