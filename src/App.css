@@ -1,7 +1,9 @@
 .background {
   background-color: #008080;
-  display: initial;
+  display: block;
   margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .start-button {
@@ -46,7 +48,6 @@
   height: 1.7rem;
   position: absolute;
   bottom: 0;
-  z-index: -1;
   padding: 3px 0px;
   box-shadow: 0px -3px 2px white;
 }
@@ -148,6 +149,48 @@
   outline: 1px dotted black;
   outline-offset: -4px;
 }
+
+.main-stage {
+  background-color: #03ecfc;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ground {
+  background-color: #393939;
+  width: 100vw;
+  height: 15vh;
+  bottom: 0;
+  position: absolute;
+}
+
+.block1 {
+  background-color: pink;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 25%;
+  position: absolute;
+}
+
+.block2 {
+  background-color: black;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.block3 {
+  background-color: rgb(25, 177, 50);
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 75%;
+  position: absolute;
+}
+
 
 .time {
   width: 3rem;

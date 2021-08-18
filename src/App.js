@@ -15,20 +15,29 @@ import "./app.css";
 function App() {
   return (
     <>
-      <Router basename="windows-95">
-        <Clippy />
-        <Contact />
-        <MyComputer />
-        <RecycleBin />
-        <StartMenu />
-        <TheInternet />
-        <MyDocuments />
-        <Time />
-        <MiniGameIcon />
-        <MiniGame />
+      <Router basename="/windows-95">
+        <Switch>
+          <Route exact path="/">
+            <div className="background">
+              <div className="taskbar"></div>
+              <Clippy />
+              <Contact />
+              <MyComputer />
+              <RecycleBin />
+              <StartMenu />
+              <TheInternet />
+              <MyDocuments />
+              <Time />
+              <MiniGameIcon />
+            </div>
+          </Route>
+          <Route exact path="/retro-gamer-land">
+            <MiniGame />
+          </Route>
+        </Switch>
       </Router>
     </>
   );
-}
+};
 
 export default App;
