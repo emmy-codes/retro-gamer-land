@@ -1,6 +1,7 @@
 import React, {useRef} from "react";
 
 function StartMenu() {
+
   let startMenu = useRef(null);
   let openStartMenu = useRef(null);
 
@@ -12,7 +13,8 @@ function StartMenu() {
       startMenu.current.classList.add("hidden");
       openStartMenu.current.classList.remove("clicked-start-button");
     }
-  }
+  };
+  
   return (
     <>
       <div
