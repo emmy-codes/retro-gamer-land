@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/retro-gamer-land/static/css/main.464096c2.chunk.css",
+    "main.js": "/retro-gamer-land/static/js/main.2118f5d2.chunk.js",
+    "main.js.map": "/retro-gamer-land/static/js/main.2118f5d2.chunk.js.map",
+    "runtime-main.js": "/retro-gamer-land/static/js/runtime-main.5ae88804.js",
+    "runtime-main.js.map": "/retro-gamer-land/static/js/runtime-main.5ae88804.js.map",
+    "static/js/2.712a3e5a.chunk.js": "/retro-gamer-land/static/js/2.712a3e5a.chunk.js",
+    "static/js/2.712a3e5a.chunk.js.map": "/retro-gamer-land/static/js/2.712a3e5a.chunk.js.map",
+    "index.html": "/retro-gamer-land/index.html",
+    "static/css/main.464096c2.chunk.css.map": "/retro-gamer-land/static/css/main.464096c2.chunk.css.map",
+    "static/js/2.712a3e5a.chunk.js.LICENSE.txt": "/retro-gamer-land/static/js/2.712a3e5a.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/retro-gamer-land/static/media/paintLogo.1008e0d6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ae88804.js",
+    "static/js/2.712a3e5a.chunk.js",
+    "static/css/main.464096c2.chunk.css",
+    "static/js/main.2118f5d2.chunk.js"
+  ]
+}
