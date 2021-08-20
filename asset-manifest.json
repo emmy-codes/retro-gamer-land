@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/windows-95/static/css/main.c5f1a933.chunk.css",
+    "main.css": "/windows-95/static/css/main.24f28d6e.chunk.css",
     "main.js": "/windows-95/static/js/main.af6b84b0.chunk.js",
     "main.js.map": "/windows-95/static/js/main.af6b84b0.chunk.js.map",
     "runtime-main.js": "/windows-95/static/js/runtime-main.ea72308d.js",
@@ -8,14 +8,14 @@
     "static/js/2.59bfef2c.chunk.js": "/windows-95/static/js/2.59bfef2c.chunk.js",
     "static/js/2.59bfef2c.chunk.js.map": "/windows-95/static/js/2.59bfef2c.chunk.js.map",
     "index.html": "/windows-95/index.html",
-    "static/css/main.c5f1a933.chunk.css.map": "/windows-95/static/css/main.c5f1a933.chunk.css.map",
+    "static/css/main.24f28d6e.chunk.css.map": "/windows-95/static/css/main.24f28d6e.chunk.css.map",
     "static/js/2.59bfef2c.chunk.js.LICENSE.txt": "/windows-95/static/js/2.59bfef2c.chunk.js.LICENSE.txt",
     "static/media/app.css": "/windows-95/static/media/paintLogo.1008e0d6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ea72308d.js",
     "static/js/2.59bfef2c.chunk.js",
-    "static/css/main.c5f1a933.chunk.css",
+    "static/css/main.24f28d6e.chunk.css",
     "static/js/main.af6b84b0.chunk.js"
   ]
 }
