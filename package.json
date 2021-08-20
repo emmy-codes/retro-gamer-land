@@ -1,8 +1,8 @@
 {
-  "name": "retro-gamer-land",
+  "name": "windows-95",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://emmy-codes.github.io/retro-gamer-land",
+  "homepage": "https://emmy-codes.github.io/windows-95",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
