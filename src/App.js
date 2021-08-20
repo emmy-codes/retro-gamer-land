@@ -10,7 +10,7 @@ import MyDocuments from "./Components/MyDocuments";
 import MiniGameIcon from "./Components/MiniGameIcon";
 import MiniGame from "./Components/MiniGame";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./app.css";
+import "./App.css";
 
 function App() {
   return (
