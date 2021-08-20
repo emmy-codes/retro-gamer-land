@@ -151,13 +151,14 @@
 }
 
 .main-stage {
-  background-color: #03ecfc;
+  background: url("./Images/239936494_565822451497080_5717280749306899478_n.png") no-repeat;
   width: 100vw;
   height: 100vh;
+  background-size: 100%;
+  background-color: black;
 }
 
 .ground {
-  background-color: #393939;
   width: 100vw;
   height: 15vh;
   bottom: 0;
