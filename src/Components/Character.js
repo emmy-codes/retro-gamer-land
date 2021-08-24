@@ -5,12 +5,12 @@ function Character({}) {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const Sprite = styled.div`
-    background-color: #593202;
+    background-color: #d57fc8;
     width: 5rem;
     height: 8rem;
     left: ${({ x }) => x + "rem"};
-    top: ${({ y }) => y + "rem"};
-    position: absolute; ;
+    bottom: ${({ x }) => x + "rem"};
+    position: absolute;
   `;
   const actionXMap = {
     ArrowLeft: decrement,
