@@ -151,7 +151,8 @@
 }
 
 .main-stage {
-  background: url("./Images/239936494_565822451497080_5717280749306899478_n.png") no-repeat;
+  background: url("./Images/239936494_565822451497080_5717280749306899478_n.png")
+    no-repeat;
   width: 100vw;
   height: 100vh;
   background-size: 100%;
@@ -159,6 +160,7 @@
 }
 
 .ground {
+  display: none;
   width: 100vw;
   height: 15vh;
   bottom: 0;
@@ -169,7 +171,7 @@
   background-color: pink;
   width: 70px;
   height: 70px;
-  top: 50%;
+  top: 35%;
   left: 25%;
   position: absolute;
 }
@@ -178,7 +180,7 @@
   background-color: black;
   width: 70px;
   height: 70px;
-  top: 50%;
+  top: 35%;
   left: 50%;
   position: absolute;
 }
@@ -187,11 +189,10 @@
   background-color: rgb(25, 177, 50);
   width: 70px;
   height: 70px;
-  top: 50%;
+  top: 35%;
   left: 75%;
   position: absolute;
 }
-
 
 .time {
   width: 3rem;
@@ -422,4 +423,14 @@ body .hidden {
   width: 6.8rem;
   font-family: sans-serif;
   font-size: small;
+}
+
+.char {
+  background-color: palevioletred;
+  width: 5vw;
+  height: 10vh;
+  display: block;
+  bottom: 35%;
+  left: 10%;
+  position: absolute;
 }
