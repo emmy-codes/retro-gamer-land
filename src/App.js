@@ -31,7 +31,7 @@ function App() {
               <MiniGameIcon />
             </div>
           </Route>
-          <Route exact path="/retro-gamer-land">
+          <Route path="/retro-gamer-land">
             <MiniGame />
           </Route>
         </Switch>
