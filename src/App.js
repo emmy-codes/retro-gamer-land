@@ -15,7 +15,6 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Router basename="/windows-95">
         <Switch>
           <Route exact path="/">
             <div className="background">
@@ -35,7 +34,6 @@ function App() {
             <MiniGame />
           </Route>
         </Switch>
-      </Router>
     </>
   );
 };

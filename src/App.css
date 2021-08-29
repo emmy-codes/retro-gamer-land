@@ -32,6 +32,7 @@
   background-size: 25px;
   padding-top: 30px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .win-icon {
