@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/windows-95/static/css/main.e9fa3d62.chunk.css",
-    "main.js": "/windows-95/static/js/main.518d3f6d.chunk.js",
-    "main.js.map": "/windows-95/static/js/main.518d3f6d.chunk.js.map",
+    "main.css": "/windows-95/static/css/main.03c22103.chunk.css",
+    "main.js": "/windows-95/static/js/main.d4b53fa8.chunk.js",
+    "main.js.map": "/windows-95/static/js/main.d4b53fa8.chunk.js.map",
     "runtime-main.js": "/windows-95/static/js/runtime-main.ea72308d.js",
     "runtime-main.js.map": "/windows-95/static/js/runtime-main.ea72308d.js.map",
-    "static/js/2.6b5d5e03.chunk.js": "/windows-95/static/js/2.6b5d5e03.chunk.js",
-    "static/js/2.6b5d5e03.chunk.js.map": "/windows-95/static/js/2.6b5d5e03.chunk.js.map",
+    "static/js/2.a8b84135.chunk.js": "/windows-95/static/js/2.a8b84135.chunk.js",
+    "static/js/2.a8b84135.chunk.js.map": "/windows-95/static/js/2.a8b84135.chunk.js.map",
     "index.html": "/windows-95/index.html",
-    "static/css/main.e9fa3d62.chunk.css.map": "/windows-95/static/css/main.e9fa3d62.chunk.css.map",
-    "static/js/2.6b5d5e03.chunk.js.LICENSE.txt": "/windows-95/static/js/2.6b5d5e03.chunk.js.LICENSE.txt",
+    "static/css/main.03c22103.chunk.css.map": "/windows-95/static/css/main.03c22103.chunk.css.map",
+    "static/js/2.a8b84135.chunk.js.LICENSE.txt": "/windows-95/static/js/2.a8b84135.chunk.js.LICENSE.txt",
     "static/media/App.css": "/windows-95/static/media/paintLogo.1008e0d6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ea72308d.js",
-    "static/js/2.6b5d5e03.chunk.js",
-    "static/css/main.e9fa3d62.chunk.css",
-    "static/js/main.518d3f6d.chunk.js"
+    "static/js/2.a8b84135.chunk.js",
+    "static/css/main.03c22103.chunk.css",
+    "static/js/main.d4b53fa8.chunk.js"
   ]
 }
