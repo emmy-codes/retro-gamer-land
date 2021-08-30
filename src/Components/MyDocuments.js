@@ -8,27 +8,28 @@ function MyDocuments() {
           <span>Documents</span>
         </div>
         <div class="folder-body">
-          <a
+          {/* <a
             class="all-icons project-icons icon-text"
             id="project1"
             target="_blank"
+            href=""
           >
             Project 1
-          </a>
-          <a
+          </a> */}
+          {/* <a
             class="all-icons project-icons icon-text"
             id="project2"
             target="_blank"
           >
             Project 2
-          </a>
-          <a
+          </a> */}
+          {/* <a
             class="all-icons project-icons icon-text"
             id="project3"
             target="_blank"
           >
             Project 3
-          </a>
+          </a> */}
         </div>
       </div>
     </>

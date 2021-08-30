@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
-function Character({}) {
+// removed empty array from argument {}
+function Character() {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const Sprite = styled.div`
@@ -14,32 +15,33 @@ function Character({}) {
   `;
   const actionXMap = {
     ArrowLeft: decrement,
-    ArrowRight: increment
+    ArrowRight: increment,
   };
 
   const actionYMap = {
     ArrowDown: increment,
-    ArrowUp: decrement
+    ArrowUp: decrement,
   };
-
+  // eslint-disable-next-line
   function movement(e) {
-    const actionX = actionXMap [e.key];
-    const actionY = actionYMap [e.key];
+    const actionX = actionXMap[e.key];
+    const actionY = actionYMap[e.key];
     actionX && setX(actionX);
     actionY && setY(actionY);
-  };
+  }
 
   useEffect(() => {
     document.addEventListener("keydown", movement);
+    // eslint-disable-next-line
   }, []);
 
-  function increment (x) {
+  function increment(x) {
     return x + 1;
-  };
+  }
 
-  function decrement (x) {
+  function decrement(x) {
     return x - 1;
-  };
+  }
 
   return (
     <div onKeyPress={movement}>
