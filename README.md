@@ -1,4 +1,4 @@
-## Personal portfolio retro style Windows 95.
+## Personal portfolio retro style Windows 95. (Solo project)
 
 This is the continuation from PurrsonalProject, where I created a visually similar Windows 95 Desktop using CSS and stress. As I enjoyed the project so much and was disappointed that I couldn't finish it in time, and I also wanted to create a retro mini game for my personal project in year 2. So I combined the two by upgrading and fixing all of the unfinished code and the issues I had previously, with making a new game. Oh, and recreating it in React so I could control things better.
 
