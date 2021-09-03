@@ -13,6 +13,6 @@ function MiniGame() {
       <Character />
     </>
   );
-}
+};
 
 export default MiniGame;

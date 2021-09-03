@@ -9,6 +9,8 @@ import Time from "./Components/Time";
 import MyDocuments from "./Components/MyDocuments";
 import MiniGameIcon from "./Components/MiniGameIcon";
 import MiniGame from "./Components/MiniGame";
+import SecretRealm from "./Components/SecretRealm";
+import SecretRealmIcon from "./Components/SecretRealmIcon";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
@@ -29,10 +31,14 @@ function App() {
               <MyDocuments />
               <Time />
               <MiniGameIcon />
+              <SecretRealmIcon />
             </div>
           </Route>
           <Route path="/retro-gamer-land">
             <MiniGame />
+          </Route>
+          <Route path="/the-secret-realm">
+          <SecretRealm />
           </Route>
         </Switch>
       </Router>
