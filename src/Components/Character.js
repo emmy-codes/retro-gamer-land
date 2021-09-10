@@ -4,31 +4,32 @@ import styled from "styled-components";
 // removed empty array from argument {}
 function Character() {
   const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
+  const [y, setY] = useState(70);
   const Sprite = styled.div`
-    background-color: #593202;
+    background-color: #5261eb;
+    outline: dotted;
     width: 5rem;
     height: 8rem;
     left: ${({ x }) => x + "rem"};
-    top: ${({ y }) => y + "rem"};
+    top: ${({ y }) => y + "%"};
     position: absolute; ;
   `;
+
   const actionXMap = {
     ArrowLeft: decrement,
     ArrowRight: increment,
   };
 
-  const actionYMap = {
-    ArrowDown: increment,
-    ArrowUp: decrement,
-  };
   // eslint-disable-next-line
-  function movement(e) {
-    const actionX = actionXMap[e.key];
-    const actionY = actionYMap[e.key];
+  function movement(event) {
+    const actionX = actionXMap[event.key];
+    
     actionX && setX(actionX);
-    actionY && setY(actionY);
-  }
+    if (event.key === "ArrowUp") {
+      setY(y - 20)
+      setTimeout(() => {setY(y)},200)
+    }
+  };
 
   useEffect(() => {
     document.addEventListener("keydown", movement);
@@ -36,12 +37,12 @@ function Character() {
   }, []);
 
   function increment(x) {
-    return x + 1;
-  }
+    return x + 5;
+  };
 
   function decrement(x) {
-    return x - 1;
-  }
+    return x - 5;
+  };
 
   return (
     <div onKeyPress={movement}>
