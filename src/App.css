@@ -431,7 +431,6 @@ body .hidden {
   font-family: "Microsoft Sans", sans-serif;
   font-size: 10pt;
   height: auto;
-  cursor: pointer;
   top: 40%;
   left: 60%;
   position: absolute;
@@ -449,4 +448,11 @@ body .hidden {
   bottom: 35%;
   left: 10%;
   position: absolute;
+}
+
+.close {
+cursor: pointer;
+position: absolute;
+top: 0;
+right: 0;
 }
