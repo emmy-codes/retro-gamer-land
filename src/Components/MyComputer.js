@@ -6,7 +6,7 @@ function MyComputer() {
       <div className="all-icons icon-text my-computer-icon">
         My Computer
         <br />
-        (Just for show)
+        (About me)
       </div>
     </>
   );

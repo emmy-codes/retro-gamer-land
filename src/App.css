@@ -283,11 +283,14 @@ body .hidden {
 .folder-header {
   background: #000181;
   color: white;
-  position: relative;
-  font-size: 0.65rem;
-  padding: 4px;
+  position: absolute;
+  font-size: 0.85rem;
+  padding: 8px;
   border: 2px solid #bdbdbd;
   text-align: center;
+  width: 25vw;
+  top: 10%;
+  left: 30%;
 }
 
 .folder-body {
@@ -296,7 +299,18 @@ body .hidden {
   border: 2px solid #bdbdbd;
   flex: 1 1 auto;
   background: white;
-  min-height: 7em;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.text-content {
+  color: black;
+}
+
+.header-content {
+  color: white;
+  margin: 5px 5px 15px;
+  max-height: fit-content;
 }
 
 .project-icons {
