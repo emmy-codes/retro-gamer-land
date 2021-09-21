@@ -10,7 +10,6 @@ import MyDocuments from "./Components/MyDocuments";
 import MiniGameIcon from "./Components/MiniGameIcon";
 import MiniGame from "./Components/MiniGame";
 import SecretRealm from "./Components/SecretRealm";
-import AboutMe from "./Components/AboutMe";
 import SecretRealmIcon from "./Components/SecretRealmIcon";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
