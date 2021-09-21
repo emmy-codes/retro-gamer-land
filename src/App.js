@@ -10,6 +10,7 @@ import MyDocuments from "./Components/MyDocuments";
 import MiniGameIcon from "./Components/MiniGameIcon";
 import MiniGame from "./Components/MiniGame";
 import SecretRealm from "./Components/SecretRealm";
+import AboutMe from "./Components/AboutMe";
 import SecretRealmIcon from "./Components/SecretRealmIcon";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
@@ -38,12 +39,14 @@ function App() {
             <MiniGame />
           </Route>
           <Route path="/the-secret-realm">
-          <SecretRealm />
+            <SecretRealm />
           </Route>
         </Switch>
       </Router>
     </>
   );
-};
+}
 
 export default App;
+
+// YT clip for startup sound https://www.youtube.com/watch?v=miZHa7ZC6Z0
