@@ -1,12 +1,11 @@
 import React from "react";
 
-function AboutMe() {
+function AboutMe(props) {
+
   return (
-    <div>
+    <div className="about-me">
       <div className="folder-header">
-        <h4 className="header-content">
-          Ugly not-actually-Word95-looking-doc
-        </h4>
+        <h4 className="header-content">Ugly not-actually-Word95-looking-doc</h4>
         <div className="folder-body">
           <p className="text-content">
             Howdy! I'm Emma, a budding JavaScript developer located in
@@ -35,10 +34,12 @@ function AboutMe() {
             Emma Scott-Allen
           </p>
         </div>
-        <button className="close">x</button>
+        <button className="close" onClick={props.openOrClose}>
+          x
+        </button>
       </div>
     </div>
-  );
-}
+  )
+};
 
 export default AboutMe;

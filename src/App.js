@@ -33,7 +33,6 @@ function App() {
               <Time />
               <MiniGameIcon />
               <SecretRealmIcon />
-              <AboutMe />
             </div>
           </Route>
           <Route path="/retro-gamer-land">

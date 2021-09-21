@@ -28,6 +28,6 @@ function Clippy() {
       </div>
     </>
   ) : null;
-}
+};
 
 export default Clippy;
