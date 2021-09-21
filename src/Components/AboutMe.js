@@ -1,7 +1,6 @@
 import React from "react";
 
 function AboutMe(props) {
-
   return (
     <div className="about-me">
       <div className="folder-header">
@@ -39,7 +38,7 @@ function AboutMe(props) {
         </button>
       </div>
     </div>
-  )
+  );
 };
 
 export default AboutMe;
