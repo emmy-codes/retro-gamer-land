@@ -1,6 +1,6 @@
 import React from "react";
 import Clippy from "./Components/Clippy";
-import Contact from "./Components/Contact";
+import CV from "./Components/CV";
 import MyComputer from "./Components/MyComputer";
 import RecycleBin from "./Components/RecycleBin";
 import StartMenu from "./Components/StartMenu";
@@ -23,7 +23,7 @@ function App() {
             <div className="background">
               <div className="taskbar"></div>
               <Clippy />
-              <Contact />
+              <CV />
               <MyComputer />
               <RecycleBin />
               <StartMenu />
