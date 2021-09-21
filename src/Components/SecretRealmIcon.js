@@ -5,7 +5,7 @@ function SecretRealmIcon() {
   return (
     <>
       <Link to="the-secret-realm" className="secret-realm icon-text all-icons">
-        The Secret Realm
+        The Secret Realm <br />(Currently inactive)
       </Link>
     </>
   );
