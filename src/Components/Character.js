@@ -32,7 +32,9 @@ function Character(props) {
     if (event.key === "ArrowUp") {
       setY(y - 20);
       setTimeout(() => {
-        alert(`Hurrah, you reached ${underneathBlock.classList.value}`)
+        if (underneathBlock !== null) {
+          alert(`Hurrah, you reached ${underneathBlock.classList.value}`);
+        }
         setY(y);
       }, 200);
     }
@@ -43,11 +45,11 @@ function Character(props) {
     const positions = [];
 
     props.blocks.forEach((currentBlock) => {
-        const currentPosition = currentBlock.current.getBoundingClientRect();
-        positions.push(currentPosition)
+      const currentPosition = currentBlock.current.getBoundingClientRect();
+      positions.push(currentPosition);
     });
 
-    setBlocksPosition(positions)
+    setBlocksPosition(positions);
 
     // eslint-disable-next-line
   }, []); // empty array means useEffect only runs once rather than every time the component updates https://reactjs.org/docs/hooks-effect.html#explanation-why-effects-run-on-each-update
@@ -55,17 +57,16 @@ function Character(props) {
   useLayoutEffect(() => {
     const currentPosition = character.current.getBoundingClientRect();
 
-    for(let index = 0; index < blocksPosition.length; index++){
+    for (let index = 0; index < blocksPosition.length; index++) {
       const currentBlock = blocksPosition[index];
-      if(currentBlock.x === currentPosition.x) {
+      if (currentBlock.x === currentPosition.x) {
         underneathBlock = props.blocks[index].current;
         break;
       } else {
         underneathBlock = null;
       }
-
     }
-  })
+  });
 
   function increment(x) {
     return x + 5;
