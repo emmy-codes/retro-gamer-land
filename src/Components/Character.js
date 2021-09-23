@@ -10,13 +10,8 @@ function Character(props) {
   const [blocksPosition, setBlocksPosition] = useState([]);
   const character = useRef();
   const Sprite = styled.div`
-    background-color: #5261eb;
-    outline: dotted;
-    width: 5rem;
-    height: 8rem;
     left: ${({ x }) => x + "rem"};
-    top: ${({ y }) => y + "%"};
-    position: absolute; ;
+    top: ${({ y }) => y + "%"};;
   `;
 
   const actionXMap = {
@@ -70,17 +65,17 @@ function Character(props) {
 
   function increment(x) {
     return x + 5;
-  }
+  };
 
   function decrement(x) {
     return x - 5;
-  }
+  };
 
   return (
     <div onKeyPress={movement}>
-      <Sprite ref={character} x={x} y={y}></Sprite>
+      <Sprite className="char" ref={character} x={x} y={y}></Sprite>
     </div>
   );
-}
+};
 
 export default Character;

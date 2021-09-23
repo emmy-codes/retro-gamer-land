@@ -184,7 +184,8 @@
 }
 
 .block1 {
-  background-color: pink;
+  background: url("./Images/chest.png") no-repeat;
+  background-size: 70px;
   width: 70px;
   height: 70px;
   top: calc(50% - 70px);
@@ -193,7 +194,8 @@
 }
 
 .block2 {
-  background-color: black;
+  background: url("./Images/chest.png") no-repeat;
+  background-size: 70px;
   width: 70px;
   height: 70px;
   top: calc(50% - 70px);
@@ -202,7 +204,8 @@
 }
 
 .block3 {
-  background-color: rgb(25, 177, 50);
+  background: url("./Images/chest.png") no-repeat;
+  background-size: 70px;
   width: 70px;
   height: 70px;
   top: calc(50% - 70px);
@@ -460,8 +463,9 @@ body .hidden {
 }
 
 .char {
-  background-color: palevioletred;
-  width: 5vw;
+  background: url("./Images/walking1.png") no-repeat;
+  background-size: 50px;
+
   height: 10vh;
   display: block;
   bottom: 35%;
