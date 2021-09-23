@@ -6,7 +6,7 @@ let underneathBlock;
 // removed empty array from argument {}
 function Character(props) {
   const [x, setX] = useState(0);
-  const [y, setY] = useState(70);
+  const [y, setY] = useState(75);
   const [blocksPosition, setBlocksPosition] = useState([]);
   const character = useRef();
   const Sprite = styled.div`
@@ -25,7 +25,7 @@ function Character(props) {
 
     actionX && setX(actionX);
     if (event.key === "ArrowUp") {
-      setY(y - 20);
+      setY(y - 25);
       setTimeout(() => {
         if (underneathBlock !== null) {
           alert(`Hurrah, you reached ${underneathBlock.classList.value}`);

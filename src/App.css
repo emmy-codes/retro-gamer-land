@@ -463,8 +463,8 @@ body .hidden {
 }
 
 .char {
-  background: url("./Images/walking1.png") no-repeat;
-  background-size: 50px;
+  background: url("./Images/walking2.png") no-repeat;
+  background-size: 55px;
   width: 3vw;
   height: 10vh;
   display: block;
