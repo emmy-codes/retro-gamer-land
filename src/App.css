@@ -465,7 +465,7 @@ body .hidden {
 .char {
   background: url("./Images/walking1.png") no-repeat;
   background-size: 50px;
-
+  width: 3vw;
   height: 10vh;
   display: block;
   bottom: 35%;
