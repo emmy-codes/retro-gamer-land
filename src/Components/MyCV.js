@@ -7,7 +7,7 @@ function MyCV(props) {
       <button className="close" onClick={props.close}>
         x
       </button>
-      <img alt="My CV image" src={CV} />
+      <img alt="My CV" src={CV} />
     </div>
   );
 }
