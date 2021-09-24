@@ -479,3 +479,14 @@ position: absolute;
 top: 0;
 right: 0;
 }
+
+.cv-wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 30%;
+}
+
+.cv-wrapper img {
+  height: 75vh;
+}
