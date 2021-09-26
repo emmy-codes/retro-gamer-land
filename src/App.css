@@ -362,9 +362,10 @@ body .hidden {
 .menu-item {
   display: flex;
   align-items: center;
-  padding: 0.7em 0 0.3em 2.4em;
+  padding: 0.9em 0em 0.3em 3.4em;
   cursor: pointer;
   background-position: 0.3em;
+  font-weight: 200;
 }
 
 .menu-items {
@@ -474,10 +475,10 @@ body .hidden {
 }
 
 .close {
-cursor: pointer;
-position: absolute;
-top: 0;
-right: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .cv-wrapper {
